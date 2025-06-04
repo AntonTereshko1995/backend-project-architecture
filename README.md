@@ -4,6 +4,11 @@
 A simple REST API for storing and managing key-value pairs using Flask and Redis.
 Author: **Anton Tereshko**
 
+The technical task was completed in the branch: main.
+
+After the technical task, I continued to implement the task.
+The latest version is in the branch: developer
+
 ---
 
 ### 📦 API Endpoints
