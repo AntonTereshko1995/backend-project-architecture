@@ -50,7 +50,7 @@ python flask_process_handler.py
 * Include test coverage reports to track and improve test completeness.
 * Enable CI (e.g., GitHub Actions) to automatically run tests on each commit.
 
-###### 2. Add Docker Support
+###### 2. Add Docker Support (implemented in the develop branch)
 
 * Create a `Dockerfile` to package the Flask app and its dependencies.
 * Create a `docker-compose.yml` file to run the app alongside Redis.
@@ -70,6 +70,6 @@ python flask_process_handler.py
   * Exceptions and system errors
 * Optionally support log levels (`INFO`, `WARNING`, `ERROR`, `DEBUG`) and log files.
 
-###### 4. Settings file
+###### 4. Settings file (implemented in the develop branch)
 
 * Add a file to load all libraries within the project automatically.
