@@ -11,7 +11,7 @@ def create_key_value_blueprint():
     result = controller.create(input_json)
     return jsonify(result), 201
 
-@blueprint_key_value.route("/get/<int:key>", methods=["GET"])
+@blueprint_key_value.route("/get/<string:key>", methods=["GET"])
 def get_key_value_blueprint(key):
     logger = current_app.config["logger"]
     controller = KeyValueController(logger)
@@ -22,7 +22,7 @@ def get_key_value_blueprint(key):
 def delete_key_value_blueprint(key):
     logger = current_app.config["logger"]
     controller = KeyValueController(logger)
-    result = controller.execute(key)
+    result = controller.delete(key)
     return jsonify(result), 201
 
 @blueprint_key_value.route("/update/", methods=["PUT"])

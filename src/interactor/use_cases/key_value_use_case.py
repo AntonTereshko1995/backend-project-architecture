@@ -47,7 +47,7 @@ class KeyValueUseCase:
         self.__repository.delete(input_dto.key)
         self.__logger.log_info("Key deleted successfully")
 
-        output_dto = KeyOutputDto(input_dto.key)
+        output_dto = KeyValueOutputDto(input_dto.key, "")
         presenter_response = self.__presenter.present(output_dto)
         return presenter_response
     

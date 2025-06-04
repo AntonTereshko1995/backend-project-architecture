@@ -23,10 +23,3 @@ class KeyValueOutputDto:
 
     def to_dict(self) -> Dict:
         return asdict(self)
-
-@dataclass
-class KeyOutputDto:
-    key: str
-
-    def to_dict(self) -> Dict:
-        return asdict(self)

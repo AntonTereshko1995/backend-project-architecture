@@ -11,6 +11,5 @@ class RedisClientFactory:
                 host=config_app.REDIS_HOST,
                 port=config_app.REDIS_PORT,
                 db=config_app.REDIS_DB,
-                password=config_app.REDIS_PASSWORD,
                 decode_responses=True)
         return cls._client
