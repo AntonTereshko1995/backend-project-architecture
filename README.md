@@ -61,3 +61,7 @@ python flask_process_handler.py
   * Key creation, update, and deletion
   * Exceptions and system errors
 * Optionally support log levels (`INFO`, `WARNING`, `ERROR`, `DEBUG`) and log files.
+
+###### 4. Settings file
+
+* Add a file to load all libraries within the project automatically.
