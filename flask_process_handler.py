@@ -5,4 +5,4 @@ logger = LoggerDefault()
 
 if __name__ == "__main__":
     flask_app = create_flask_app(logger)
-    flask_app.run(port=5000, debug=True)
+    flask_app.run(host="0.0.0.0", port=5000, debug=True)

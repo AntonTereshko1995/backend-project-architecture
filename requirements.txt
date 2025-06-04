@@ -1,0 +1,7 @@
+python-dotenv
+flask[async]
+flask
+requests
+typing
+redis
+cerberus

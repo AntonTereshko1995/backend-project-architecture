@@ -1,0 +1,18 @@
+services:
+  app:
+    build: .
+    ports:
+      - "5000:5000"
+    env_file:
+      - configs/docker.env
+    depends_on:
+      - redis
+    volumes:
+      - .:/app
+    environment:
+      HOST: redis
+
+  redis:
+    image: redis:7
+    ports:
+      - "6379:6379"
