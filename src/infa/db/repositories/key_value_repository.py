@@ -3,7 +3,7 @@ from typing import Optional
 import redis
 from src.infa.db.settings.connection import RedisClientFactory
 from src.interactor.errors.error_classes import KeyAlreadyExistsError, KeyNotFoundError
-from src.interactor.repositories.key_value_repository_interface import IKeyValueRepository
+from src.interactor.interfaces.repositories.key_value_repository_interface import IKeyValueRepository
 
 class KeyValueRepository(IKeyValueRepository):
 
