@@ -1,27 +1,35 @@
-
 # 🔐 Key-Value Store API
 
 A simple REST API for storing and managing key-value pairs using Flask and Redis.
 Author: **Anton Tereshko**
+
+The technical task was completed in the branch: main.
+
+After the technical task, I continued to implement the task.
+The latest version is in the branch: developer
 
 ---
 
 ### 📦 API Endpoints
 
 ###### 1. Create a Key
+
 curl -X POST -H "Content-Type: application/json"
 -d '{"key": "test_key", "value": "test_value"}'
 http://localhost:5000/v1/create/
 
 ###### 1. Delete a Key
+
 curl -X DELETE http://localhost:5000/v1/delete/[KEY]
 
 ###### 2. Update a Key
+
 curl -X PUT -H "Content-Type: application/json"
 -d '{"key": "test_key", "value": "new_value"}'
 http://localhost:5000/v1/update/
 
 ###### 3. Get a Key
+
 curl -X GET http://localhost:5000/v1/get/[KEY]
 
 ---
@@ -48,7 +56,7 @@ python flask_process_handler.py
 * Create a `docker-compose.yml` file to run the app alongside Redis.
 * Benefit: consistent development and production environments, easy deployment.
 
-###### 3. Configure Redis Environment
+###### 3. Configure Redis Environment (implemented in the develop branch)
 
 * Improve Redis connection handling for local host).
 
