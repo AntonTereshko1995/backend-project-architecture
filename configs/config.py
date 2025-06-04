@@ -1,15 +1,9 @@
 import os
 from dotenv import load_dotenv
 
+load_dotenv(dotenv_path="configs/.env")
 
-load_dotenv()  # take environment variables from .env
-
-# DB_USER = os.getenv("DATABASE_USER")
-# DB_PASS = os.getenv("DATABASE_PASSWORD")
-# DB_NAME = os.getenv("DATABASE_NAME")
-# DB_HOST = os.getenv("DATABASE_HOST")
-# DB_PORT = os.getenv("DATABASE_PORT")
-# DB_DRIVER = "postgresql+psycopg2"
-
-
-DB_URI = "sqlite:///test_the_secret_house.db"
+REDIS_HOST = os.getenv("REDIS_HOST", "localhost")
+REDIS_PORT = int(os.getenv("REDIS_PORT", 6379))
+REDIS_DB = int(os.getenv("REDIS_DB", 0))
+REDIS_PASSWORD = os.getenv("REDIS_PASSWORD", None)
