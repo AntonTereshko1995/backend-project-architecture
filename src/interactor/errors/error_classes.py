@@ -9,3 +9,10 @@ class NotCreatedError(Exception):
 
 class UniqueViolationError(Exception):
     """Exception raised when a unique constraint is violated"""
+    pass
+
+class KeyAlreadyExistsError(Exception):
+    pass
+
+class KeyNotFoundError(Exception):
+    pass

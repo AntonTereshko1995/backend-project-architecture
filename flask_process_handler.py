@@ -1,4 +1,3 @@
-
 from src.app import create_flask_app
 from src.infa.db.loggers.logger_default import LoggerDefault
 
