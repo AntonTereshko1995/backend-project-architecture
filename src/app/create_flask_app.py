@@ -1,13 +1,13 @@
 from http.client import HTTPException
 from flask import Flask
-from src.app.blueprints import key_value_blueprint
+from src.app.blueprints.key_value_blueprint import blueprint_key_value
 from src.interactor.errors.error_classes import UniqueViolationError
 from src.interactor.interfaces.loggers.logger_interface import ILogger
 
 def create_flask_app(logger: ILogger):
     app = Flask(__name__)
     app.config["logger"] = logger
-    app.register_blueprint(key_value_blueprint, url_prefix="/v1")
+    app.register_blueprint(blueprint_key_value, url_prefix="/v1")
 
     @app.errorhandler(HTTPException)
     def handle_http_error(error: HTTPException):
