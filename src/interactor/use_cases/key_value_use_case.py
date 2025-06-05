@@ -1,8 +1,8 @@
 from typing import Dict
 from src.interactor.dtos.key_value_dto import KeyInputDto, KeyValueInputDto, KeyValueOutputDto
 from src.interactor.interfaces.loggers.logger_interface import ILogger
+from src.interactor.interfaces.presenters.key_value_presenter_interface import IKeyValuePresenter
 from src.interactor.interfaces.repositories.key_value_repository_interface import IKeyValueRepository
-from src.interactor.presenters.key_value_presenter_interface import IKeyValuePresenter
 from src.interactor.validations.key_validator import KeyValidator
 from src.interactor.validations.key_value_validator import KeyValueValidator
 

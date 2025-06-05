@@ -5,3 +5,5 @@ requests
 typing
 redis
 cerberus
+pytest
+pytest-mock
