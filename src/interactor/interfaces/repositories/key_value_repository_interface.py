@@ -4,17 +4,17 @@ from typing import Optional
 class IKeyValueRepository(ABC):
 
     @abstractmethod
-    def create(self, key: str, value: str) -> Optional[str]:
+    def create(self, key: str, value: str):
         pass
 
     @abstractmethod
-    def get(self, key: str) -> Optional[str]:
+    def get(self, key: str):
         pass
 
     @abstractmethod
-    def remove(self, key: str) -> Optional[str]:
+    def delete(self, key: str):
         pass
 
     @abstractmethod
-    def update(self, key: str, value: str) -> Optional[str]:
+    def update(self, key: str, value: str):
         pass
