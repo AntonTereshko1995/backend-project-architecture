@@ -6,27 +6,24 @@ A modular Python backend architecture built with Flask, inspired by Clean Archit
 
 ### Project Structure
 
-.
-├── configs/                # Environment and config files
-├── src/
-│   ├── app/                # Flask app setup and routing
-│   │   ├── blueprints/     # Flask Blueprints
-│   │   ├── controllers/    # HTTP request controllers
-│   │   ├── interfaces/     # REST or other API interfaces
-│   │   ├── presenters/     # Response formatting and output
-│   │   └── create_flask_app.py
-│
-│   ├── infa/               # Infrastructure layer
-│   │   ├── db/             # Database interactions
-│   │   └── interactor/     # Core application logic
-│   │       ├── dtos/       # Data Transfer Objects
-│   │       ├── errors/     # Error handling
-│   │       ├── interfaces/ # Abstract interfaces
-│   │       ├── use_cases/  # Business use cases
-│   │       └── validations/ # Input validation
-│
-│   └── test/               # Unit and integration tests
-│       └── conftest.py
+* `configs/` – Environment and config files
+* `src/`
+  * `app/` – Flask app setup and routing
+    * `blueprints/` – Flask Blueprints
+    * `controllers/` – HTTP request controllers
+    * `interfaces/` – REST or other API interfaces
+    * `presenters/` – Response formatting and output
+    * `create_flask_app.py` – Flask app factory
+  * `infa/` – Infrastructure layer
+    * `db/` – Database interactions
+    * `interactor/` – Core application logic
+    * `dtos/` – Data Transfer Objects
+    * `errors/` – Error handling
+    * `interfaces/` – Abstract interfaces
+    * `use_cases/` – Business use cases
+    * `validations/` – Input validation
+  * `test/` – Unit and integration tests
+* `conftest.py` – Test configuration
 
 
 ###### Principles
